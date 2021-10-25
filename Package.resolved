@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "IDScanCore",
+        "repositoryURL": "https://github.com/IDScanNet/IDScanCoreIOS.git",
+        "state": {
+          "branch": null,
+          "revision": "826ffe496f7a9f5408609eb07cdd06eb64f07649",
+          "version": "1.20211025.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
