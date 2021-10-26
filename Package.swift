@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "IDScanInterfacesPub",
+    name: "IDScanInterfacesIOS",
     platforms: [
         .iOS(.v9)
     ],
