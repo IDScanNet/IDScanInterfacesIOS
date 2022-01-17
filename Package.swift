@@ -12,6 +12,9 @@ let package = Package(
         .library(
             name: "IDScanParserInterfaces",
             targets: ["IDScanParserInterfaces"]),
+        .library(
+            name: "IDScanScannerInterfaces",
+            targets: ["IDScanScannerInterfaces"]),
     ],
     dependencies: [
         .package(url: "https://github.com/IDScanNet/IDScanCoreIOS.git", .upToNextMajor(from: "2.0.0"))
@@ -30,11 +33,17 @@ let package = Package(
             dependencies: [
                 "IDScanInterfacesPub"
             ]),
+        .target(
+            name: "IDScanScannerInterfaces",
+            dependencies: [
+                "IDScanInterfacesPub"
+            ]),
         .testTarget(
             name: "IDScanInterfacesTests",
             dependencies: [
                 "IDScanInterfacesPub",
                 "IDScanParserInterfaces",
+                "IDScanScannerInterfaces",
                 .product(name: "IDScanComponentTests", package: "IDScanCoreIOS")
             ]),
     ]
